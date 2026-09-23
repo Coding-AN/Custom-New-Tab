@@ -1,31 +1,47 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+body{
+  display: flex;
+  margin: 0;
+  padding: 2rem 0;
+  position: 0;
+  background-image: url(https://media1.tenor.com/m/vamoG6jjbl4AAAAd/space-stars.gif);
+  text-align: center;
+}
+body::before,
+body::after{
+  content: '';
+  position: fixed;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background-color: navy;
+  z-index: -1;
+}
+body::before{
+  left: 0;
+  clip-path: polygon(0% 0%, 72% 0%, 58% 8%, 72% 13%, 57% 19%, 71% 23%, 57% 29%, 71% 34%, 57% 41%, 70% 46%, 57% 50%, 70% 56%, 56% 61%, 68% 69%, 55% 73%, 68% 77%, 54% 83%, 68% 88%, 55% 95%, 67% 100%, 0% 100%);
+}
+body::after{
+  right: 0;
+  clip-path: polygon(100% 0%, 32% 0%, 15% 8%, 32% 11%, 14% 16%, 31% 20%, 13% 26%, 30% 30%, 13% 36%, 31% 40%, 13% 45%, 30% 50%, 12% 53%, 29% 58%, 12% 64%, 29% 69%, 11% 72%, 28% 78%, 13% 81%, 27% 87%, 13% 94%, 26% 100%, 100% 100%);
+}
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+h1{
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+  color: wheat;
+}
+p{
+  font-family: "Rock Salt", sans-serif;
+  color: wheat;
+}
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
+@media (max-width: 928px){
+  body::before,
+  body::after{
+    display: none;
   }
+}
+img{
+  max-width: 50%;
 }
