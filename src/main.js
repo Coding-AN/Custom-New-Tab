@@ -25,5 +25,5 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`)
     </div>
   `})
   .catch(err => 
-    console.log(err)
+    document.querySelector("#app").innerHTML = `<p>Error: ${err.message}</p>`
 );
