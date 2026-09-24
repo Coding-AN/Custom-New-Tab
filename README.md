@@ -10,3 +10,5 @@ https://coding-an.github.io/NASA-APOD-Viewer
 1. Fetches the Astronomy Picture of the Day right from NASA's API, along with the title and explanation
 2. Has a lightweight animated Background
 3. Supports Dynamic Resizing, with the APOD getting smaller and the sidebars disappearing if the display gets too small
+## Credits
+<a href="https://www.flaticon.com/free-icons/space" title="space icons">Space icons created by Dighital Design - Flaticon</a>
