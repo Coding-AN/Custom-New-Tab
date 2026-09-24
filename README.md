@@ -12,3 +12,6 @@ https://coding-an.github.io/NASA-APOD-Viewer
 3. Supports Dynamic Resizing, with the APOD getting smaller and the sidebars disappearing if the display gets too small
 ## Credits
 <a href="https://www.flaticon.com/free-icons/space" title="space icons">Space icons created by Dighital Design - Flaticon</a>
+
+---
+**Made for Hack Club Stardance**
